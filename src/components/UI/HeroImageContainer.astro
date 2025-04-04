@@ -1,0 +1,12 @@
+---
+import ShowOnView from "./ShowOnView";
+
+const {url, name, class: styles} = Astro.props;
+---
+<ShowOnView client:load>
+  <div class=`flex flex-col gap-2 md:flex-row ${styles}`>
+    <slot name="left"/>
+    <img src={url} alt={name} loading="lazy" class="w-full aspect-square rounded-md md:w-1/2"/>
+    <slot />
+  </div>
+</ShowOnView>

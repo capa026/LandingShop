@@ -1,0 +1,14 @@
+---
+const {class: styles, primary, secondary, href} = Astro.props;
+---
+<div class:list={
+  [`select-none cursor-pointer rounded-md p-4 text-center text-2xl border
+   shadow-md shadow-white/5 transition-colors duration-300 ${styles}`, {
+    " border-white/20 hover:bg-white/20": primary,
+    "bg-secondary text-black hover:bg-secondary/50": secondary,
+    "!p-0":href
+  }]
+} 
+>
+  {href ? <a href={href} class="block py-2 px-4"> <slot /></a> : <slot>Button</slot>}
+</div>

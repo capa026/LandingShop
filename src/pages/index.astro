@@ -1,0 +1,16 @@
+---
+import Footer from '../components/Footer.astro';
+import Hero from '../components/Hero.astro';
+import Information from '../components/Information.astro';
+import Navbar from '../components/Navbar';
+import WaveDivider from '../components/UI/WaveDivider.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+	<Navbar client:load/>
+	<Hero />
+	<WaveDivider />
+	<Information />
+	<Footer />
+</Layout>

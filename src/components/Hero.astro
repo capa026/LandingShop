@@ -1,0 +1,50 @@
+---
+import HeroImageContainer from "./UI/HeroImageContainer.astro";
+import Button from "./UI/Button.astro";
+---
+
+<article class="h-auto bg-gradient-to-b from-black/60 to-black/20 pb-4">
+  <div class="container">
+
+    <h1 class="text-4xl text-center p-2">🚚 <b>Compramos</b> tus <b>articulos</b> 🛒 en linea con los mejores <b>precios</b></h1>
+    
+    <h2 class="text-2xl text-white/60 text-center">En las tiendas mas buscadas</h2>
+    
+    <div class={`
+    flex flex-col gap-8 p-2 mt-6
+    `}>
+    <HeroImageContainer url="shein.webp" name="shein">
+      <div class="flex flex-col text-center border border-white/20 rounded-md p-4 m-1.5">
+        <h1 class="uppercase text-3xl font-bol">SHEIN</h1>
+        <p class="text-white/50 mb-4">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        </p>
+        <Button secondary class="my-auto w-max py-1 px-4 mx-auto" href="/comprar">Comprar</Button>
+      </div>
+    </HeroImageContainer>
+    
+    <HeroImageContainer url="amazon.webp" name="amazon" class="flex-col-reverse">
+      <div class="flex flex-col text-center border border-white/20 rounded-md p-4 m-1.5" slot="left">
+        <h1 class="uppercase text-3xl font-bol">AMAZON</h1>
+        <p class="text-white/50 mb-4">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        </p>
+        <Button secondary class="my-auto w-max py-1 px-4 mx-auto" href="/comprar">Comprar</Button>
+      </div>
+    </HeroImageContainer>
+    
+    <HeroImageContainer url="aliexpress.webp" name="aliexpress">
+      <div class="flex flex-col text-center border border-white/20 rounded-md p-4 m-1.5">
+        <h1 class="uppercase text-3xl font-bol">ALI EXPRESS</h1>
+        <p class="text-white/50 mb-4">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        </p>
+        <Button secondary class="my-auto w-max py-1 px-4 mx-auto" href="/comprar">Comprar</Button>
+      </div>
+    </HeroImageContainer>
+  </div>
+    <Button class="mt-4 w-max mx-auto !py-4 !px-8" primary href="#contacto">
+      CONTACTANOS
+    </Button> 
+</div>
+</article>

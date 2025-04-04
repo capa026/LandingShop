@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+:root {
+  --iris: #6153cc;
+  --iris-dark: #4f43a5;
+  --secondary: #c2f970;
+}
+@theme {
+  --color-iris: var(--iris);
+  --color-iris-dark: var(--iris-dark);
+  --color-secondary: var(--secondary);
+}
+.container {
+  @apply mx-auto max-w-5xl;
+}
+.card {
+  @apply border border-white/20 rounded-md p-4 bg-gradient-to-br from-black/20 to-black/40;
+}

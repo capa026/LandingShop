@@ -1,0 +1,54 @@
+---
+import ArrowDown from "./UI/ArrowDown.astro";
+import ShowOnView from "./UI/ShowOnView";
+
+---
+<div class="mt-[135px]" id="informacion">
+  <div class="container">
+
+    
+    <h1 class="text-center text-3xl">⭕ Como usar el servicio?</h1>
+    <h3 class="text-xl text-white/40 text-center">Guia e informacion</h3>
+    
+
+    <ShowOnView client:load>
+      <div class="card mt-4 w-[90%] mx-auto md:max-w-[500px]">
+        <h1 class="mb-4 text-center">En <b>LandingShop</b> puedes hacer tu pedido SHEIN a precio de página, sin pagar comisión o porcentaje, <b>cancelando solo un pequeño adicional por IMPUESTOS por cada prenda que elijas.</b></h1>
+        
+        <div class="flex flex-col">
+          <h1 class="text-xl font-bold">Te ofrecemos además: </h1>
+          <ul class="">
+            <li>⚫ - Pedidos aéreos SIN MÍNIMO DE MONTO.</li>
+            <li>⚫ - FINANCIAMIENTO DEL 50% de tu pedido.</li>
+            <li>⚫ - ENVIOS AÉREOS: 1$ por cada artículo que lleves.</li>
+            <li>⚫ - ENVIOS MARÍTIMOS GRATIS.</li>
+            <li>⚫ - Garantía de DEVOLUCIÓN DEL DINERO si no llega tu producto.</li>
+          </ul>
+          <h2 class="text-xl text-white/40">Y mucho mas...</h2>
+        </div>
+      </div>
+    </ShowOnView>
+    <h1 class="my-4 text-center text-2xl font-bold">Como realizar tu pedido❓</h1>
+    <ShowOnView client:load>
+      <div class="card mt-4 w-[90%] mx-auto md:max-w-[500px]">
+        <h1 class="text-xl font-bold">Paso 1:</h1>
+        <h2 class=" text-center text-white/60">Descarga la App de la tienda en tu teléfono, y elige los articulos que quieras.</h2>
+        
+        <ArrowDown />
+        <h1 class="text-xl font-bold">Paso 2:</h1>
+        <h2 class=" text-center text-white/60">Envíanos capture de pantalla de la prenda donde se vea el precio, link de la prenda y especifica su talla, color, cantidad, etc.</h2>
+        <ArrowDown />
+        <h1 class="text-xl font-bold">Paso 3:</h1>
+        <h2 class=" text-center text-white/60">Haz el pago de tu pedido y LISTO</h2>
+        <h1 class="text-sm font-bold text-white/60 my-4">PD: No tenemos monto mínimo ni compra ni de prendas, pero tenemos financiamiento de la mitad de tu pedido con pedidos al mayor a partir de 50$ en artículos</h1>
+        
+      </div>
+    </ShowOnView>
+  </div>
+</div>
+
+<style>
+  #informacion{
+    scroll-margin-top: 60px;
+  }
+</style>
