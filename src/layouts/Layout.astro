@@ -1,6 +1,9 @@
 ---
 import "../styles/global.css";
-import Navbar from "../components/Navbar.jsx";
+//Is neccesary to import, to enable page animations
+//It need to be on every page or layout
+//Is used on the head tag
+import { ClientRouter } from 'astro:transitions';
 ---
 <!doctype html>
 <html lang="es">
@@ -9,6 +12,7 @@ import Navbar from "../components/Navbar.jsx";
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<title>LandingShop - Compramos su mercancia de forma internacional</title>
+		<ClientRouter />
 	</head>
 	<body class="bg-gradient-to-b from-gray-700 to-gray-900 to-40% bg-fixed" id="inicio">
 		<main class="">
